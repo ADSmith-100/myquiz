@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurama Quiz!</title>
+    <link rel="stylesheet" href="quizStyle.css">
+    
+</head>
+<body>
+    <div class="start">
+    <h1>Test your knowledge of FUTURAMA!</h1>
+    <h2>Would you like to play?</h2>
+    <button type="button" class="startButton">BEGIN!</button>
+    </div>
+
+    <div class="quiz">
+    <h2>Question</h2>
+    <ul>
+        <li>Choice</li>
+        <li>Choice</li>
+        <li>Choice</li>
+        <li>Choice</li>
+    </ul>
+    <button type="button" class="answerButton">Submit Answer!</button>
+    </div>
+    
+    <div class="incorrect">
+        <h2>Your answer is bad and you should feel bad!</h2>
+        <p>The correct answer is actually</p>
+        <button type="button" class="nextButton">NEXT!</button>
+        </div>
+
+    <div class="correct">
+        <h2>You are technically correct...  The best kind of correct!</h2>
+        <p>You must think you're pretty smart huh?</p>
+        <button type="button" class="nextButton">NEXT!</button>
+        </div>
+
+        <div class="tally"><!--this is the score and question counter-->
+            <h2>Score:  Question Number:  </h2>
+        </div>
+
+    <div class="summary">
+        <h2>Summary Screen</h2>
+        <p>Good NEWS everyone! You scored x out y correct!</p>
+        <button type="button" class="restartButton">Restart!</button>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+    <script src="Fquiz.js"></script>
+</body>
+</html>
