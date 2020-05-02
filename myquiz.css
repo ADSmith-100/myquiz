@@ -1,53 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futurama Quiz!</title>
-    <link rel="stylesheet" href="quizStyle.css">
-    
-</head>
-<body>
-    <div class="start">
-    <h1>Test your knowledge of FUTURAMA!</h1>
-    <h2>Would you like to play?</h2>
-    <button type="button" class="startButton">BEGIN!</button>
-    </div>
+.quiz {
+    border:8px solid  red;
+    padding: 5px;
+}
 
-    <div class="quiz">
-    <h2>Question</h2>
-    <ul>
-        <li>Choice</li>
-        <li>Choice</li>
-        <li>Choice</li>
-        <li>Choice</li>
-    </ul>
-    <button type="button" class="answerButton">Submit Answer!</button>
-    </div>
-    
-    <div class="incorrect">
-        <h2>Your answer is bad and you should feel bad!</h2>
-        <p>The correct answer is actually</p>
-        <button type="button" class="nextButton">NEXT!</button>
-        </div>
+.start {
+    border:3px solid rgb(89, 0, 255);
+    padding: 5px;
+}
 
-    <div class="correct">
-        <h2>You are technically correct...  The best kind of correct!</h2>
-        <p>You must think you're pretty smart huh?</p>
-        <button type="button" class="nextButton">NEXT!</button>
-        </div>
+.incorrect {
+    border:3px solid yellow;
+    padding: 5px;
+}
 
-        <div class="tally"><!--this is the score and question counter-->
-            <h2>Score:  Question Number:  </h2>
-        </div>
+.correct {
+    border:8px solid green;
+    padding: 5px;
+}
 
-    <div class="summary">
-        <h2>Summary Screen</h2>
-        <p>Good NEWS everyone! You scored x out y correct!</p>
-        <button type="button" class="restartButton">Restart!</button>
-        </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
-    <script src="Fquiz.js"></script>
-</body>
-</html>
+.tally {
+    border:3px solid rgb(255, 0, 221);
+    padding: 5px;
+}
+
+.summary {
+    border:8px solid rgb(128, 0, 32);
+    padding: 5px;
+}
