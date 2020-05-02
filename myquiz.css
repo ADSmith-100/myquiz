@@ -1,29 +1,35 @@
 .quiz {
-    border:8px solid  red;
+    border:3px solid  gray;
     padding: 5px;
+    margin: 5px;
 }
 
 .start {
-    border:3px solid rgb(89, 0, 255);
+    border:3px solid gray;
     padding: 5px;
+    margin: 5px;
 }
 
 .incorrect {
-    border:3px solid yellow;
+    border:3px solid gray;
     padding: 5px;
+    margin: 5px;
 }
 
 .correct {
-    border:8px solid green;
+    border:3px solid gray;
     padding: 5px;
+    margin: 5px;
 }
 
 .tally {
-    border:3px solid rgb(255, 0, 221);
+    border:3px solid gray;
     padding: 5px;
+    margin: 5px;
 }
 
 .summary {
-    border:8px solid rgb(128, 0, 32);
+    border:3px solid gray;
     padding: 5px;
+    margin: 5px;
 }
