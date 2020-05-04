@@ -16,18 +16,24 @@
 
     <div class="quiz">
     <h2>Question</h2>
-    <ul>
-        <li>Choice</li>
-        <li>Choice</li>
-        <li>Choice</li>
-        <li>Choice</li>
-    </ul>
-    <button type="button" class="answerButton">Submit Answer!</button>
+    <form>
+  <p>Please make your selection:</p>
+  <input type="radio" id="choice" name="choice" value="choice">
+  <label for="choice">choice</label><br>
+  <input type="radio" id="choice" name="choice" value="choice">
+  <label for="radio">choice</label><br>
+  <input type="radio" id="choice" name="choice" value="choice">
+  <label for="choice">choice</label><br>
+  <input type="radio" id="choice" name="choice" value="choice">
+  <label for="choice">choice</label><br>
+</form>
+  <button type="button" class="answerButton">Submit Answer!</button>
     </div>
+
     
     <div class="incorrect">
         <h2>Your answer is bad and you should feel bad!</h2>
-        <p>The correct answer is actually</p>
+        <p>The correct answer is actually<span></span></p>
         <button type="button" class="nextButton">NEXT!</button>
         </div>
 
@@ -38,7 +44,8 @@
         </div>
 
         <div class="tally"><!--this is the score and question counter-->
-            <h2>Score:  Question Number:  </h2>
+            <h2 class = "score">Score:<span>0</span></h2>
+            <h2 class = "number">Number:<span></span></h2>   
         </div>
 
     <div class="summary">
@@ -48,6 +55,6 @@
         </div>
     
     <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
-    
+    <script src="myquiz.js"></script>
 </body>
 </html>
