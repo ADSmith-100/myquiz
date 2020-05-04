@@ -45,6 +45,7 @@ $(document).ready(function(){
         $('.quiz').show();
         $('.tally').show();
         showQuestion();
+        updateQuestNum();
 
     });
 
@@ -68,13 +69,16 @@ $(document).ready(function(){
         e.preventDefault();
         
         if(currentQuestion >= questions.length){
-            
+            updateTally();
+            $('.tally').show();
             showSummary();
+
             
         }   else {
             $('.quiz').show();
         }
         $('.correct').hide();
+        updateQuestNum();
         //$('.tally').show();
         
     });
@@ -92,12 +96,14 @@ $(document).ready(function(){
         $('.incorrect').hide();
         $('.incorrect span').html('');
         //$('.tally').show();
+        updateQuestNum();
 
     });
 
     $('.summary button').click(function(e){
         e.preventDefault();
         restartQuiz();
+        updateQuestNum();
     });
 
 });
@@ -121,8 +127,8 @@ function showQuestion(){
         $('.quiz form').append(`<input type="radio" id="${i}" name="choice" value="choice">
         <label for="choice">${question.answers[i]}</label><br>`)
     };
-    let myQuestion = currentQuestion + 1;
-    $('.number span').text(`${myQuestion} out of ${questions.length}`);
+    //let myQuestion = currentQuestion + 1;
+    //$('.number span').text(`${myQuestion} out of ${questions.length}`);
     $('.tally').show();
 }
 //`<li id="${i}">${question.answers[i]}</li>`
@@ -144,13 +150,15 @@ function showQuestion(){
     //}   else {
         showQuestion();
     
-    updateTally();
+    
 }
 
 function goodAnswer(){
     $('.quiz').hide();
     $('.correct').show();
-    $('.tally').hide();
+    updateTally();
+    //updateQuestNum();
+    //$('.tally').hide();
     
 }
 
@@ -162,7 +170,14 @@ function badAnswer(){
     let smartAnswer = question.correct;
     $('.incorrect span').append(` <span> ${question.answers[smartAnswer]}</span>`);
     $('.incorrect span').append('');
+    //updateQuestNum();
     }
+
+function updateQuestNum() {
+    let myQuestion = currentQuestion + 1;
+    $('.number span').text(`${myQuestion} out of ${questions.length}`);
+}
+
 
 function updateTally() {
     let currentScore = score;
