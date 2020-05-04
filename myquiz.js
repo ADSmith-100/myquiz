@@ -87,7 +87,7 @@ $(document).ready(function(){
         e.preventDefault();
         
         if(currentQuestion >= questions.length){
-            
+            $('.tally').show();
             showSummary()
             
         }   else {
@@ -165,7 +165,7 @@ function goodAnswer(){
 function badAnswer(){
     $('.quiz').hide();
     $('.incorrect').show();
-    $('.tally').hide();
+    //$('.tally').hide();
     let question = questions[currentQuestion];
     let smartAnswer = question.correct;
     $('.incorrect span').append(` <span> ${question.answers[smartAnswer]}</span>`);
