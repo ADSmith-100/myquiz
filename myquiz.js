@@ -38,7 +38,7 @@ let questions = [
   },
   {
     title: "What is Fry’s relation to Professor Farnsworth?",
-    answers: ["his son", "his grandson", "his newphew", "his uncle"],
+    answers: ["his son", "his grandson", "his nephew", "his uncle"],
     correct: 3,
   },
   {
