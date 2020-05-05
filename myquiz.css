@@ -1,191 +1,209 @@
-@import url(//db.onlinewebfonts.com/c/3d20efacfeaf02b55cc8b7b9f1f4d5cd?family=Futurama+Bold+Font);
+@import url(//db.onlinewebfonts.com/c/3d20efacfeaf02b55cc8b7b9f1f4d5cd?family=Futurama + Bold + Font);
 
-@font-face {font-family: "Futurama Bold Font"; src: url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.eot"); src: url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.woff") format("woff"), url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.svg#Futurama Bold Font") format("svg"); }
-
+@font-face {
+  font-family: "Futurama Bold Font";
+  src: url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.eot");
+  src: url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3d20efacfeaf02b55cc8b7b9f1f4d5cd.svg#Futurama Bold Font")
+      format("svg");
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    font-size: 16;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-weight: normal;
-    color: #323137;
-    text-decoration: none;
-    text-align: center;
-        
-  }
-/*experimenting with catch all box - need to make it responsive
-  .bigBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
+  padding: 0;
+  margin: 0;
+  font-size: 16;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #323137;
+  text-decoration: none;
+  text-align: center;
+}
 
-  }
-  */
-
-  .images {
-      margin: 10px;
-      border: 3px solid #323137;
-      border-radius: 5px;
-
-  }
+.images {
+  margin: 10px 0 0 0;
+  border: 3px solid #323137;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+}
 
 body {
-    background-color: #4394A5;
+  background-color: #4394a5;
+  padding-bottom: 50px;
 }
 
 .start {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.start p{
-    font-size: 30px;
-    margin: 20px;
+.start p {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.start img {
+  margin-bottom: 30px;
 }
 
 button {
-    border: 3px solid #810104;
-    padding: 10px 25px;
-    color: #810104;
-    border-radius: 5px;
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 900;
-    cursor: pointer;
+  border: 3px solid #810104;
+  padding: 15px 25px;
+  color: #810104;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #72BF95;
-    color: #323137;
+  background-color: #72bf95;
+  color: #323137;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 6px;
+  font-family: "Futurama Bold Font";
+  color: #810104;
+  text-shadow: -2px 0 #f2892a, 0 2px #f2892a, 2px 0 #f2892a, 0 -2px #f2892a;
+  background-color: #72bf95;
+  border: 3px solid #323137;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
     font-size: 50px;
-    padding: 60px;
-    font-family: "Futurama Bold Font";
-    color: #810104;   
-    text-shadow: -2px 0 #F2892A, 0 2px #F2892A, 2px 0 #F2892A, 0 -2px #F2892A;
-    background-color: #72BF95;
-    border: 3px solid #323137;
-    border-radius: 5px;
-   
+    padding: 40px;
+  }
 }
 
 .quiz h2 {
-    border:3px solid  #323137;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+  border: 3px solid #323137;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .incorrect h2 {
-    border:3px solid  #323137;
+  border: 3px solid #323137;
 }
 
 .correct h2 {
-    border:3px solid  #323137;
+  border: 3px solid #323137;
 }
 
 h2 {
-    
-    font-size: 30px;
-    padding: 20px;
-    font-family: "Futurama Bold Font";
-    color: #810104;   
-    background-color: #72BF95;
-    margin-right: auto;
-    margin-left: auto;
-    
+  font-size: 20px;
+  padding: 8px;
+  font-family: "Futurama Bold Font";
+  color: #810104;
+  background-color: #72bf95;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.startButton {
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  margin: 20px 0;
 }
 
 .quiz label {
-    font-size: 25px;
-    display: inline-block;
-    cursor: pointer;
-    margin: 10px;
-    color: #323137;
-    cursor: pointer;
+  font-size: 22px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  color: #000;
 }
 
-.quiz, .summary, .incorrect, .correct, .tally  {
-    display: none;
+.quiz,
+.summary,
+.incorrect,
+.correct,
+.tally {
+  display: none;
 }
 
 .quiz {
-    
-    padding: 5px;
-    
-    background-color: #4394A5;
-    
+  padding: 5px;
+  background-color: #4394a5;
 }
 
-
-
-.incorrect, .correct{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: #4394A5;
-    font-size: 25px;
-    
-    border-radius: 5px;
+.incorrect,
+.correct {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #4394a5;
+  font-size: 30px;
+  border-radius: 5px;
 }
 
-
-
+.incorrect p,
+.correct p {
+  margin: 50px;
+}
 
 .tally {
-    border: 3px solid #323137;
-    border-radius: 5px;
-    
-    font-size: 25px;
-    background-color: #72BF95;
-    
-    margin-bottom: 3px;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    
+  border: 3px solid #323137;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 10px;
+  font-size: 25px;
+  background-color: #72bf95;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
 }
 
+.score span {
+  display: inline-flex;
 
-
-.score span{
-    margin-right: 20px;
-    color: #810104 ;
-    text-shadow: -2px 0 #F2892A, 0 2px #F2892A, 2px 0 #F2892A, 0 -2px #F2892A;
+  color: #810104;
+  text-shadow: -2px 0 #f2892a, 0 2px #f2892a, 2px 0 #f2892a, 0 -2px #f2892a;
 }
 
 .number span {
-    color: #810104 ;
-    text-shadow: -2px 0 #F2892A, 0 2px #F2892A, 2px 0 #F2892A, 0 -2px #F2892A;
+  color: #810104;
+  text-shadow: -2px 0 #f2892a, 0 2px #f2892a, 2px 0 #f2892a, 0 -2px #f2892a;
 }
 
 .summary h2 {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border:3px solid #323137;
-    margin-bottom: 30px;
-    
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid #323137;
+  margin-bottom: 30px;
 }
 
 .summary {
-    
-    
-    padding: 5px;
-    margin: 5px;
-    background-color: #4394A5;
-    
-    font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #4394a5;
+  font-size: 30px;
+}
+
+.summary p {
+  margin: 20px;
 }
