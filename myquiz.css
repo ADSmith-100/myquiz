@@ -90,6 +90,10 @@ h1 {
     font-size: 50px;
     padding: 40px;
   }
+  .correct p,
+  .incorrect p {
+    font-size: 50px;
+  }
 }
 
 .quiz h2 {
@@ -155,13 +159,13 @@ form {
   padding: 5px;
   margin-bottom: 5px;
   background-color: #4394a5;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 5px;
 }
 
 .incorrect p,
 .correct p {
-  margin: 30px;
+  margin: 20px;
 }
 
 .tally {
