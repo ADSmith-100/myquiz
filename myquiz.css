@@ -15,6 +15,18 @@
     text-align: center;
         
   }
+/*experimenting with catch all box - need to make it responsive
+  .bigBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+
+  }
+  */
 
   .images {
       margin: 10px;
@@ -25,6 +37,12 @@
 
 body {
     background-color: #4394A5;
+}
+
+.start {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .start p{
@@ -63,6 +81,9 @@ h1 {
 
 .quiz h2 {
     border:3px solid  #323137;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .incorrect h2 {
@@ -80,7 +101,8 @@ h2 {
     font-family: "Futurama Bold Font";
     color: #810104;   
     background-color: #72BF95;
-    
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -98,23 +120,24 @@ h2 {
 }
 
 .quiz {
-    border:3px solid  gray;
+    
     padding: 5px;
     
     background-color: #4394A5;
-    border: 3px solid #323137;
-    border-radius: 5px;
+    
 }
 
 
 
 .incorrect, .correct{
-    
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
-    
+    margin-bottom: 5px;
     background-color: #4394A5;
     font-size: 25px;
-    border: 3px solid #323137;
+    
     border-radius: 5px;
 }
 
@@ -122,17 +145,16 @@ h2 {
 
 
 .tally {
-    border-top: 0px;
-    border-right: 3px  solid #323137;
-    border-left: 3px  solid #323137;
-    border-bottom: 3px  solid #323137;
+    border: 3px solid #323137;
     border-radius: 5px;
     
     font-size: 25px;
     background-color: #72BF95;
     
-    width: auto;
-    
+    margin-bottom: 3px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -150,11 +172,16 @@ h2 {
 }
 
 .summary h2 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     border:3px solid #323137;
     margin-bottom: 30px;
+    
 }
 
 .summary {
+    
     
     padding: 5px;
     margin: 5px;
