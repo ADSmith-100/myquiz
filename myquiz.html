@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futurama Quiz!</title>
+    <title>Quiz-A-Rama!</title>
     <link rel="stylesheet" href="myquiz.css">
-    
+    <link href="//db.onlinewebfonts.com/c/3d20efacfeaf02b55cc8b7b9f1f4d5cd?family=Futurama+Bold+Font" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="start">
-    <h1>Test your knowledge of FUTURAMA!</h1>
-    <h2>Would you like to play?</h2>
+    <h1>Welcome to Quiz-A-Rama!</h1>
+    <p>Dare to play, puny human?</p>
+    <img src="images/morbostartpage.jpeg" alt="morbo stern" class="images"><br>
     <button type="button" class="startButton">BEGIN!</button>
     </div>
 
     <div class="quiz">
     <h2>Question</h2>
+    <img src="images/morbotalking.gif" alt="morbo asking" class="images">
     <form>
   <p>Please make your selection:</p>
   <input type="radio" id="choice" name="choice" value="choice">
@@ -32,24 +34,27 @@
 
     
     <div class="incorrect">
-        <h2>Your answer is bad and you should feel bad!</h2>
-        <p>The correct answer is actually<span></span></p>
+        <h2>INCORRECT!</h2>
+        <img src="images/incorrect.gif" alt="zoidberg angry" class="images">
+        <p>The correct answer is actually:  <span></span></p>
         <button type="button" class="nextButton">NEXT!</button>
         </div>
 
     <div class="correct">
         <h2>You are technically correct...  The best kind of correct!</h2>
-        <p>You must think you're pretty smart huh?</p>
+        <img src="images/technicallycorrect.gif" alt="top bureaucrat" class="images">
+        <p>You must think you're pretty smart, huh?</p>
         <button type="button" class="nextButton">NEXT!</button>
         </div>
 
         <div class="tally"><!--this is the score and question counter-->
-            <h2 class = "score">Score:<span>0</span></h2>
-            <h2 class = "number">Number:<span></span></h2>   
+            <span class = "score">Score:  <span>0      </span>  </span>
+            <span class = "number">Question:  <span>     </span>  </span> 
         </div>
 
     <div class="summary">
         <h2>Summary Screen</h2>
+        <img src="images/goodnews.gif" alt="farnsworth good" class="images">
         <p>Good NEWS everyone! You scored x out y correct!</p>
         <button type="button" class="restartButton">Restart!</button>
         </div>

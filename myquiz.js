@@ -5,35 +5,65 @@ let currentQuestion = 0;
 //questions array, each ? is an object
 let questions = [
     {
-        title: "Enter Questions here",
-        answers: ["x","y","z","a"],
+        title: "What celebration was going on when Fry fell into the cryogenic chamber and was frozen?",
+        answers: ["Christmas","New Year's Eve","Kwanza","Halloween"],
         correct: 1
 
     },   
     {
-        title: "Enter Questions here",
-        answers: ["x","y","z","a"],
-        correct: 1
+        title: "What did Dr. Zoidberg receive for selling all of his stock in Planet Express?",
+        answers: ["One Million Dollars","A helicopter","A sandwich","5 bux"],
+        correct: 2
 
     },   
     {
-        title: "Enter Questions here",
-        answers: ["x","y","z","a"],
-        correct: 1
+        title: "At the end of the fourth season, who is the President of Earth?",
+        answers: ["Al Gore","Bender","The head of Richard Nixon","Kodos"],
+        correct: 2
 
     },   
     {
-        title: "Enter Questions here",
-        answers: ["x","y","z","a"],
-        correct: 1
+        title: "Where was Bender manufactured?",
+        answers: ["Mexico","The Professor's Lab","USA","Mars"],
+        correct: 0
 
     },   
     {
-        title: "Enter Questions here",
-        answers: ["x","y","z","a"],
-        correct: 1
+        title: "What is Bender’s middle name?",
+        answers: ["Milhouse","Sue","Ricardo","Bending"],
+        correct: 3
 
     },   
+    {
+        title: "How many eyes does Leela have?",
+        answers: ["one","two","three","zero"],
+        correct: 0
+
+    },   
+    {
+        title: "What is Fry’s relation to Professor Farnsworth?",
+        answers: ["his son","his grandson","his newphew","his uncle"],
+        correct: 3
+
+    },   
+    {
+        title: "Who is Zapp Brannigan’s assistant?",
+        answers: ["Fry","Amy","Kif","Zoidberg"],
+        correct: 2
+
+    },   
+    {
+        title: "What sport did Hermes compete in at the Olympics?",
+        answers: ["the limbo","100 meter dash","shotput","blurnsball"],
+        correct: 0
+
+    },
+    {
+        title: "Who is the janitor of Planet Express?",
+        answers: ["Jimbo","Scruffy","Fry","Bender"],
+        correct: 1
+
+    },    
 ]
 
 //event listeners
@@ -175,7 +205,7 @@ function badAnswer(){
 
 function updateQuestNum() {
     let myQuestion = currentQuestion + 1;
-    $('.number span').text(`${myQuestion} out of ${questions.length}`);
+    $('.number span').text(`${myQuestion} / ${questions.length}`);
 }
 
 
@@ -191,7 +221,7 @@ function showSummary(){
     $('.tally').hide();
     $('.quiz').hide();
     $('.summary').show();
-    $('.summary p').text("Congrats you scored "+score+" out of "+questions.length+" correct!")
+    $('.summary p').text("You scored "+score+" out of "+questions.length+" correct!")
     
 }
 
